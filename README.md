@@ -1,2 +1,2 @@
-# auttomus.github.io
+# Portofolio Website
 My personal website, highlighting my experience 
