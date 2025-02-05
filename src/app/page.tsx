@@ -87,14 +87,14 @@ export default function Home() {
               <Field>
                 <Label className="block pb-1">Name</Label>
                 <Input
-                  className="block w-full min-w-72 border-primary border-2 rounded-lg"
+                  className="block w-full min-w-72 h-9 border-primary border-2 rounded-lg"
                   name="name"
                 />
               </Field>
               <Field>
                 <Label className="block pb-1">Email</Label>
                 <Input
-                  className="block w-full min-w-72 border-primary border-2 rounded-lg"
+                  className="block w-full min-w-72 h-9 border-primary border-2 rounded-lg"
                   name="email"
                 />
               </Field>
