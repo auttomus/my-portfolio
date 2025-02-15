@@ -6,14 +6,15 @@ import {
   Textarea,
   Button,
 } from "@headlessui/react";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <>
       {/* Header */}
-      <header className="fixed top-0 left-0 w-full flex items-center justify-between bg-primary text-light text-lg h-16 px-6 transition-opacity duration-300 opacity-0 hover:opacity-100 z-50">
+      <header className="fixed top-0 left-0 w-full flex items-center justify-between bg-primary text-light text-base md:text-lg lg:text-xl h-16 px-6 transition-opacity duration-300 opacity-0 hover:opacity-100 z-50">
         <h1 className="font-extrabold">AUTTOMUS</h1>
-        <nav className="hidden md:block">
+        <nav className="hidden sm:block">
           <ul className="font-medium flex items-center gap-6">
             <li>
               <a href="#profile">Profile</a>
@@ -37,21 +38,39 @@ export default function Home() {
         {/* Profile Section */}
         <section
           id="profile"
-          className="h-screen flex flex-col justify-center items-center snap-start"
+          className="h-screen grid md:grid-cols-[3fr_5fr] place-items-center snap-start"
         >
-          <h1 className="text-primary text-2xl font-extrabold text-center">
-            Profile
-          </h1>
-          <div className="max-w-3xl text-center mt-4">
-            <h2 className="text-primary font-bold mb-4">
-              Kadek Agus Arya Pranata
-            </h2>
-            <p>
-              Anak jurusan Rekayasa Perangkat Lunak yang sedang menekuni
-              teknologi{" "}
-              <span className="text-primary">Artificial Intelligence</span> dan{" "}
-              <span className="text-primary">Blockchain</span>.
-            </p>
+          <div className="relative w-36 h-36 md:w-56 md:h-56 lg:w-72 lg:h-72 mx-6 col-span-2 md:col-span-1 self-end md:self-center justify-self-center md:justify-self-end">
+            <Image
+              className="rounded-full object-cover"
+              src="/profile.jpg"
+              alt="profile"
+              fill
+            />
+          </div>
+
+          <div className="z-10 text-justify text-sm md:text-base lg:text-lg grid grid-cols-[auto] grid-rows-[auto] col-start-2 row-start-2 row-end-2 md:row-start-1 md:row-end-1 justify-items-center justify-self-start self-start md:self-center">
+            <div className="w-72 h-72 z-0 row-start-1 row-end-1 col-start-1 col-end-1 rounded-full bg-gradient-to-b from-complimentary to-light md:w-96 md:h-96 md:place-self-start"></div>
+            <div className="z-10 row-start-1 row-end-1 col-start-1 col-end-1 self-center text-center md:text-left">
+              <h1 className="text-primary text-2xl md:text-3xl lg:text-4xl  font-extrabold">
+                Profile
+              </h1>
+              <h2 className="text-primary text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+                Kadek Agus Arya Pranata
+              </h2>
+              <p className="mb-4">
+                Anak jurusan Rekayasa Perangkat Lunak yang sedang menekuni
+                teknologi{" "}
+                <span className="text-primary">Artificial Intelligence</span>{" "}
+                dan <span className="text-primary">Blockchain</span>.
+              </p>
+              <p>
+                {" "}
+                Bersekolah di{" "}
+                <span className="text-primary">SMK Negeri 1 Denpasar</span>, SMK{" "}
+                <span className="text-primary">terbaik</span> di kota Denpasar
+              </p>
+            </div>
           </div>
         </section>
 
@@ -75,6 +94,11 @@ export default function Home() {
             </p>
           </div>
         </section>
+
+        {/* Bobola */}
+        <div className="grid grid-cols-1 grid-rows-1 justify-items-center justify-center">
+          <div className="w-[50vw] h-[50vw] rounded-full bg-gradient-to-b from-complimentary to-primary"></div>
+        </div>
 
         {/* Contact Section */}
         <section
