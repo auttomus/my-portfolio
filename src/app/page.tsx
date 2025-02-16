@@ -6,6 +6,7 @@ import {
   Textarea,
   Button,
 } from "@headlessui/react";
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
@@ -14,7 +15,8 @@ export default function Home() {
       {/* Header */}
       <header className="fixed left-0 top-0 z-50 flex h-16 w-full items-center justify-between bg-primary px-6 text-base text-light transition-opacity duration-300 opacity-0 hover:opacity-100 md:text-lg lg:text-xl">
         <h1 className="font-extrabold">
-          <a href="/">AUTTOMUS</a>
+          <Link href={"/"}>AUTTOMUS</Link>
+          <link rel="stylesheet" href="" />
         </h1>
         <nav className="hidden sm:block">
           <ul className="flex items-center gap-6 font-medium">
