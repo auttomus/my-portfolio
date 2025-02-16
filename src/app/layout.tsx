@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${museomoderno.className} overflow-hidden antialiased bg-light`}
+        className={`${museomoderno.className} overflow-hidden overflow-x-hidden antialiased bg-light`}
       >
         {children}
       </body>
