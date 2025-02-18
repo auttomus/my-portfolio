@@ -70,18 +70,21 @@ export default function Home() {
               <h2 className="mb-4 text-2xl font-bold text-primary md:text-3xl lg:text-4xl">
                 Kadek Agus Arya Pranata
               </h2>
-              <p className="mb-4 whitespace-pre-line">
-                Anak jurusan Rekayasa Perangkat Lunak yang sedang menekuni
-                teknologi{" "}
-                <span className="text-primary">Artificial Intelligence</span>{" "}
-                dan
-                <span className="text-primary"> Blockchain</span>.
-              </p>
-              <p className="whitespace-pre-line">
-                Bersekolah di{" "}
-                <span className="text-primary">SMK Negeri 1 Denpasar</span>, SMK{" "}
-                <span className="text-primary">terbaik</span> di kota Denpasar
-              </p>
+              <div className="max-w-[32rem]">
+                <p className="mb-4 whitespace-pre-line">
+                  Anak jurusan Rekayasa Perangkat Lunak yang sedang menekuni
+                  teknologi{" "}
+                  <span className="text-primary">Artificial Intelligence</span>{" "}
+                  dan
+                  <span className="text-primary"> Blockchain</span>.
+                </p>
+                <p className="whitespace-pre-line">
+                  Bersekolah di{" "}
+                  <span className="text-primary">SMK Negeri 1 Denpasar</span>,
+                  SMK <span className="text-primary">terbaik</span> di kota
+                  Denpasar
+                </p>
+              </div>
             </div>
           </div>
         </section>
