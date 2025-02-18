@@ -11,7 +11,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
+    <div>
+      <head>
+        <link rel="icon" href="/icon.jpg" />
+      </head>
       {/* Header */}
       <header className="fixed left-0 top-0 z-50 flex h-16 w-full items-center justify-between bg-primary px-6 text-base text-light transition-opacity duration-300 opacity-0 hover:opacity-100 md:text-lg lg:text-xl">
         <h1 className="font-extrabold">
@@ -158,6 +161,6 @@ export default function Home() {
       <footer className="flex h-16 w-full items-center justify-center bg-primary text-center text-light">
         <p>© 2025. All rights reserved</p>
       </footer>
-    </>
+    </div>
   );
 }
