@@ -93,12 +93,12 @@ export default function Home() {
             {/*  Box */}
             <div className="mt-4 grid w-60 h-80 grid-cols-[5fr_3fr] grid-rows-[4fr_2fr_6fr] items-baseline rounded-2xl bg-white bg-opacity-35 p-6 text-left text-xs shadow-lg sm:h-96 sm:w-72 sm:text-sm">
               {/* Project Title */}
-              <h2 className="text-lg font-medium sm:text-xl">Bot Katla</h2>
+              <h2 className="text-lg font-medium sm:text-xl">Katla Guesser</h2>
               {/* Status */}
               <h3 className="text-right text-gray-400">unfinished</h3>
               {/* Documentation */}
               <a
-                href="https://github.com/auttomus/telegram-mini-app.git"
+                href="https://github.com/auttomus/Katla-Guesser"
                 className="col-span-2 col-start-1 self-end text-primary underline"
               >
                 Documentation
@@ -106,8 +106,8 @@ export default function Home() {
               {/* Description */}
               <p className="col-span-3 col-start-1 mt-2 text-justify">
                 Sebuah program yang dituliskan dalam bahasa pemrograman python
-                yang berfungsi menjawab teka-teki katla secara otomatis.
-                Menggunakan teknologi machine learning
+                yang berfungsi mencari kata menggunakan algoritma pencarian
+                untuk memecahkan permainan teka-teki Katla.
               </p>
             </div>
           </section>
